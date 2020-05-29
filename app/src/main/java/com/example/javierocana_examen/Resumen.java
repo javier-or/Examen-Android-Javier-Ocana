@@ -11,12 +11,12 @@ public class Resumen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resumen);
-        etConexion = findViewById(R.id.etConexion);
+        etConexion = findViewById(R.id.etConexion1);
         etnombre = findViewById(R.id.etNombre);
         etPagocuota = findViewById(R.id.etPagoCuota);
 
-        //tvencuest = findViewById(R.id.edchrb);
-        String usuario = getIntent().getStringExtra("usuarioenvidao");
+
+        String usuario = getIntent().getStringExtra("usuarioenviado");
         String cuota = getIntent().getStringExtra("cuotaenviada");
         String nombre = getIntent().getStringExtra("nombreenviado");
 

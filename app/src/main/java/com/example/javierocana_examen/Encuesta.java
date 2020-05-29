@@ -15,8 +15,8 @@ public class Encuesta extends AppCompatActivity {
     EditText etPregunta1;
     RadioButton rb1,rb2;
     CheckBox cb1,cb2,cb3;
-    TextView tvConexion;
-    String cuota, nombre, usuario;
+    TextView tvNombre;
+    String Pagocuota, nombre, usuario;
 
 
     @Override
@@ -27,13 +27,14 @@ public class Encuesta extends AppCompatActivity {
                 cb1=findViewById(R.id.cbBasquet);
                 cb2=findViewById(R.id.cbFutbol);
                 cb3=findViewById(R.id.cbGimnasia);
-                tvConexion=findViewById(R.id.etConexion);
+                tvNombre=findViewById(R.id.etNombre);
                 rb1 = findViewById(R.id.rb1);
                 rb2 = findViewById(R.id.rb2);
-                usuario = getIntent().getStringExtra("usuarioenviado");
-                cuota = getIntent().getStringExtra("cuotaenviada");
                 nombre = getIntent().getStringExtra("nombreenviado");
-                //tvConexion.setText(usuario);
+                usuario = getIntent().getStringExtra("usuarioenviado");
+                Pagocuota = getIntent().getStringExtra("Pagocuotaenviada");
+
+
 
             }
 
@@ -70,6 +71,11 @@ public class Encuesta extends AppCompatActivity {
                 if(rb2.isChecked()==true){
                     inttento.putExtra("dato3",radio2);
                 }
+
+
+
+
+
 
                 startActivity(inttento);
             }
