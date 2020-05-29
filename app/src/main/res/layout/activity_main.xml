@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView2"
+        android:gravity="center|right"
+
+        android:text="Usuario:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center|right"
+        android:text="Contraseña:"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnIngreso"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="201dp"
+        android:onClick="Ingresar"
+        android:text="Ingresar" />
+
+    <EditText
+        android:id="@+id/edUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edContraseña"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+
+        />
+
+    <EditText
+        android:id="@+id/edContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPassword" />
+</RelativeLayout>
