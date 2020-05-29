@@ -27,7 +27,7 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="174dp"
+                android:layout_height="70dp"
                 app:srcCompat="@drawable/logo" />
 
 
@@ -114,7 +114,7 @@
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
-                android:layout_height="41dp"
+                android:layout_height="25dp"
                 android:gravity="center"
                 android:text="“RESUMEN DE ENCUESTA" />
 
@@ -149,7 +149,7 @@
         <EditText
             android:id="@+id/et4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:ems="10"
             android:inputType="textPersonName" />
     </LinearLayout>
@@ -168,15 +168,15 @@
         <EditText
             android:id="@+id/et5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/tv6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Vehiculo seleccionado es;" />
+            android:layout_height="20dp"
+            android:text="Está interesado en aprender otro idioma aparte de inglés;" />
     </LinearLayout>
 
     <LinearLayout
@@ -187,7 +187,7 @@
         <EditText
             android:id="@+id/et6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:ems="10"
             android:inputType="textPersonName" />
     </LinearLayout>

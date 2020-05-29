@@ -18,8 +18,8 @@ public class Registro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-        etr1 = findViewById(R.id.etConexion);
-        etr2 = findViewById(R.id.etConexion);
+       // etr1 = findViewById(R.id.etConexion);
+        etr2 = findViewById(R.id.etMontoInicial);
         etr3 = findViewById(R.id.etPagoCuota);
         tvConexion=findViewById(R.id.etConexion);
 
@@ -49,13 +49,13 @@ public class Registro extends AppCompatActivity {
     public void Guardar(View v){
         if(etr3.getText().toString().equals(""))
         {
-            Toast.makeText(getApplicationContext(), "Necesita calcular la cuota", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Calcular la cuota", Toast.LENGTH_LONG).show();
         }else
             {
             Intent intentEnviar = new Intent(Registro.this, Encuesta.class);
             intentEnviar.putExtra("cuotaenviada", etr3.getText().toString());
-            intentEnviar.putExtra("nombreenviado", etr1.getText().toString());
-            intentEnviar.putExtra("usuarioenvidao", tvConexion.getText().toString());
+//            intentEnviar.putExtra("nombreenviado", etr1.getText().toString());
+            intentEnviar.putExtra("usuarioenviado", tvConexion.getText().toString());
             startActivity(intentEnviar);
         }
     }

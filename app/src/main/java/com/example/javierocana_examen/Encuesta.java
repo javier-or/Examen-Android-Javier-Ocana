@@ -27,18 +27,19 @@ public class Encuesta extends AppCompatActivity {
                 cb1=findViewById(R.id.cbBasquet);
                 cb2=findViewById(R.id.cbFutbol);
                 cb3=findViewById(R.id.cbGimnasia);
+                tvConexion=findViewById(R.id.etConexion);
                 rb1 = findViewById(R.id.rb1);
                 rb2 = findViewById(R.id.rb2);
-                usuario = getIntent().getStringExtra("usuarioenvidao");
+                usuario = getIntent().getStringExtra("usuarioenviado");
                 cuota = getIntent().getStringExtra("cuotaenviada");
                 nombre = getIntent().getStringExtra("nombreenviado");
-                tvConexion.setText(usuario);
+                //tvConexion.setText(usuario);
 
             }
 
             public void enviarDatos(View v){
 
-                Intent inttento = new Intent(this, Resumen.class);
+                Intent inttento = new Intent(Encuesta.this, Resumen.class);
                 inttento.putExtra("dato",etPregunta1.getText().toString());
                 String enviar1 = cb1.getText().toString();
                 String enviar2 = cb2.getText().toString();

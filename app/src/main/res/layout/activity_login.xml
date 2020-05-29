@@ -44,7 +44,7 @@
         android:id="@+id/edUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/edContraseña"
+        android:layout_above="@+id/edContrasena"
         android:layout_alignParentRight="true"
         android:ems="10"
         android:inputType="textPersonName"
@@ -52,7 +52,7 @@
         />
 
     <EditText
-        android:id="@+id/edContraseña"
+        android:id="@+id/edContrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
